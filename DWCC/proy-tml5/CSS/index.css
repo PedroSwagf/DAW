@@ -22,6 +22,13 @@
     letter-spacing: 10px;
 }
 
+#Tlistas {
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: wavy underline yellowgreen;
+    letter-spacing: 10px;
+}
+
 #Tventajas 
 {
     margin-top: 20px;
@@ -123,7 +130,7 @@
 }
 
 
-/*aqui configuramos los estilos de la pagina enlaces*/
+/*aqui configuramos los estilos de la pagina enlaces/listas/tablas*/
 #listas {
     text-decoration: none;
     font-size: larger;
@@ -136,6 +143,12 @@
     font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
+#listasL {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+}
+
 
 #CMS {
     float: center;
