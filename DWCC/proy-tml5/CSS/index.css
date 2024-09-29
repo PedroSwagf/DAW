@@ -43,6 +43,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    left: 0;
+    right: 0;
+    
 }
 /*enlaces principales*/
 .enlaceE {
@@ -126,7 +130,12 @@
 
 /*banner*/
 #banner {
-    margin-top: 150px; 
+    margin-top: 150px;
+    padding-bottom: 50px; 
+}
+
+#banner2 {
+    margin-top: 450px; 
 }
 
 
@@ -171,7 +180,7 @@
     width: auto;
     padding: 30px;
     border-radius: 30px;
-    margin-top: 500px;
+    margin-top: 400px;
     line-height: 1.6;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
@@ -184,7 +193,7 @@
     width: auto;
     padding: 30px;
     border-radius: 30px;
-    margin-top: 500px;
+    margin-top: 400px;
     line-height: 1.6;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
@@ -204,9 +213,6 @@ th,td {
     text-align: center;
 }
 
-th{
-    
-}
 thead {
     border: 2px solid black;
     background-color: yellow;
@@ -214,9 +220,12 @@ thead {
 
 }
 /*pie de pagina*/
-footer {       
-    bottom: 0;               
-    width: 100%;             
+footer {  
+    position: fixed;   
+    bottom: 0;          
+    width: 100%; 
+    left: 0;
+    right: 0;        
     text-align: center;
     display: flex;
     justify-content: center;
