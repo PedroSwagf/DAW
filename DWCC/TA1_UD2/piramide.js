@@ -14,19 +14,15 @@ function pedirNumero() {
 }
 
 function generarPiramide (numero) {
-    let listaPiramide = document.getElementById("piramide");
-    listaPiramide.innerHTML ="";//aqui estamos limpiando el contenido previo ante de gerar la piramide
+    document.write ("<h1>Piramide de Numeros</h1>")
 
     // empezamos los bucles for para recorer las posiciones y numeros de la piramide
     for (let i = 1;i <= numero; i++) {
-        let fila = document.createElement("p");// aqui estamos creando cada fila de nuestra lista
-        let numeros = "";
+        //generamos un segundo bucle para ir incrementando las filas
         for (let j = 1; j <= i; j++) {
-            numeros += j + " "; //aqui agregamos los numeros desde el 1 hasta el valor de i, que es el numero introducido.            
+            document.write (j + " "); //aqui agregamos los numeros desde el 1 hasta el valor de i, que es el numero introducido.            
         }
-
-        fila.textContent = numeros.trim();//aqui la funcion de js trim para eliminar los espacion en blanco antes y despues de los numeros de inicio y fin.
-        listaPiramide.appendChild(fila);
+        document.write("<br>"); //hacemos un salto de fila despues de cada linea
     }
 }
 
@@ -36,3 +32,5 @@ function mostrarPiramide () {
         generarPiramide(numero);
     }
 }
+
+window.onload = mostrarPiramide();
