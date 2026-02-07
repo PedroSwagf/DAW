@@ -6,7 +6,52 @@
     <title>Selectores Avanzados</title>
 
     <style>
+        a[href$=".rar"] {
+            color: orange;
+            text-decoration: underline;
+            padding-left: 25px;
+        }
 
+        a[href$=".rar"]::before {
+            content: " 💊 ";
+        }
+        
+        a[href^="https://"] {
+            color: green;
+            text-decoration: none;
+        }
+        a[href^="https://"]::after {
+            content: " 🔗 ";
+        }
+
+        ul > li:first-child{
+            color: blue;
+            font-weight: bold;
+        }
+        ul > li:nth-child(even){
+            background-color: lightgrey;
+        }
+        ul > li:nth-child(odd) {
+            background-color: lightgreen;
+        }
+
+        tr > td {
+            background-color: lightyellow;
+        }
+
+        input:focus {
+            border: 5px solid red;
+        }
+
+        h1::before, h2::before {
+            content: " * ";
+            color: green;
+        }
+
+        label::after {
+            content: " *Campo obligatorio* ";
+            color: red;
+        }
     </style>
 </head>
 <body>
@@ -25,16 +70,18 @@
         <li>Cuarto Item</li>
         <li>Quinto Item</li>
     </ul>
-    <a href="www.google.com">
+    <a href="https://www.google.com">
         Google
     </a>
-    <a href="ejercicio_selectores.zip">
+    <a href="ejercicio_selectores.rar">
         Ejercicio 1 de selectores
     </a>
     <table>
-        <th>
-            Tabla selectores Avanzados
-        </th>
+        <tr>
+            <th>
+                Tabla selectores Avanzados
+            </th>
+        </tr>
         <tr>
             <td>
                 Primera Fila 
