@@ -1,0 +1,90 @@
+body {
+    background-color: #dddddd;
+    padding: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: #3d4349;
+}
+
+.cabecera {
+    background-color:#017bff;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#botoncierre {
+    padding: 10px 16px;
+    color: #017bff;
+    border-radius: 10px;
+    border: 1px solid #017bff;
+    width: auto;
+    
+}
+
+#botoncierre:hover {
+    background-color: #dddddd;
+}
+
+.cuerpo {
+    background-color:#ffffff;
+    display: flex;
+    flex-direction: row;
+}
+
+#imagen {
+    border: 1px solid#017bff;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+}
+span {
+    font-weight: bold;
+}
+
+.pie {
+    background-color: #f4f4f4;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+#entrada {
+    background-color: #0000ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+#entrada:hover {
+    background-color: #017bff;
+    
+}
+#salida {
+    background-color: #017bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#salida:hover { 
+    background-color: #0000ff;
+}
+#historial {
+    background-color: #b9860c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#historial:hover {
+    background-color: #a52a2b;
+}
