@@ -1,9 +1,10 @@
 body{
     background-color: rgb(211, 211, 211);
+    font-family: Arial, Helvetica, sans-serif;
 }
 .contenedorPrincipal {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 
@@ -44,14 +45,18 @@ ul {
     
 }
 
+h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
 
-a {
-    color: white;
+.hiperenlace {
+    color: #ffffff;
     flex-direction: row;
     font-size: 30px;
 }
 
-a:hover{
+.hiperenlace:hover{
     text-decoration: none;
     background-color: rgb(138, 94, 17);
 }

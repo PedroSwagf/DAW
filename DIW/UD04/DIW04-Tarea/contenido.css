@@ -1,4 +1,97 @@
-contenido {
+.contenido {
     display: flex;
+    flex-direction: row;
+}
+
+.colunizq {
+    display: flex;
+    flex-flow: column;
+    flex-basis: 10%;
+    padding: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 200px;
+}
+
+#botonformulario {
+    margin-top: 10px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.unidadtrabajo {
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(238, 238, 238);
+}
+.titulo2 {
+    background-color: rgb(60, 116, 230);
+    color: white;
+}
+
+.enlacesizq {
+    color: rgb(134, 95, 171);
+    
+}
+
+.coluncentral {
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(191, 186, 186);
     flex-basis: 50%;
+    padding: 40px;
+
+}
+
+.encabezadocentral {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    background-color: rgb(60, 116, 230);
+    padding: 30px;
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 35px;
+}
+
+.cuadrado1 {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
+.cuadrado2 {
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
+#matriculate {
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#enlaceFP {
+    color: rgb(8, 107, 206);
+    
+}
+
+.realizado {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.parrafo2 {
+    padding: 30px;
 }
