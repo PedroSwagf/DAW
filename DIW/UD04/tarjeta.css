@@ -1,12 +1,18 @@
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #dddddd;
     padding: 20px;
+    min-height: 100vh;
 }
 .container {
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    box-shadow: #3d4349;
+    box-shadow: 0px 4px 10px #3d4349;
+    overflow: hidden;
+    width: 550px;
 }
 
 .cabecera {
@@ -15,34 +21,48 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
 }
 
 
 #botoncierre {
-    padding: 10px 16px;
+    padding: 10px 14px;
     color: #017bff;
     border-radius: 10px;
     border: 1px solid #017bff;
-    width: auto;
-    
+    cursor: pointer;
 }
 
 #botoncierre:hover {
     background-color: #dddddd;
 }
 
+#titulo {
+    padding: 20px;
+}
+
 .cuerpo {
     background-color:#ffffff;
     display: flex;
     flex-direction: row;
+    padding: 25px;
+    padding-left: 60px;
+    align-items: center;
+    gap: 35px;
+}
+
+
+#texto p {
+    padding-left: 20px;
 }
 
 #imagen {
-    border: 1px solid#017bff;
-    border-radius: 50px;
-    width: 70px;
-    height: 70px;
-    padding: 20px;
+    border: 2px solid#017bff;
+    border-radius: 55px;
+    width: 120px;
+    height: 120px;
+    
 }
 span {
     font-weight: bold;
@@ -51,9 +71,10 @@ span {
 .pie {
     background-color: #f4f4f4;
     display: flex;
-    padding: 20px;
-    gap: 20px;
+    padding: 25px;
+    justify-content: space-around;
 }
+
 
 #entrada {
     background-color: #0000ff;
@@ -61,6 +82,8 @@ span {
     border: none;
     border-radius: 10px;
     padding: 15px;
+    cursor: pointer;
+    width: 170px;
 }
 #entrada:hover {
     background-color: #017bff;
@@ -72,6 +95,8 @@ span {
     border: none;
     border-radius: 10px;
     padding: 15px;
+    cursor: pointer;
+    width: 170px;
 }
 
 #salida:hover { 
@@ -83,6 +108,8 @@ span {
     border: none;
     border-radius: 10px;
     padding: 15px;
+    cursor: pointer;
+    width: 100px;
 }
 
 #historial:hover {
