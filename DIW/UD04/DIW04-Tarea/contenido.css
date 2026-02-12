@@ -1,13 +1,17 @@
 .contenido {
     display: flex;
     flex-direction: row;
+    justify-content :space-between;
+    
 }
 
 .colunizq {
     display: flex;
     flex-flow: column;
     flex-basis: 10%;
+    flex-grow: 1;
     padding: 20px;
+    width: 350px;
 }
 
 .formulario {
@@ -22,28 +26,46 @@ label {
 }
 
 input {
-    width: 200px;
+    width: 250px;
 }
 
 #botonformulario {
     margin-top: 10px;
-    width: 200px;
+    width: 250px;
     justify-content: center;
     align-items: center;
 }
+
 .unidadtrabajo {
     display: flex;
     flex-flow: column;
     background-color: rgb(238, 238, 238);
+    align-items: center;  
 }
+
 .titulo2 {
+    display: flex;
     background-color: rgb(60, 116, 230);
     color: white;
+    font-size: 14px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    width: 225px;
+    height: 75px;
+    
 }
 
 .enlacesizq {
-    color: rgb(134, 95, 171);
-    
+    color: rgb(110, 62, 155);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+
 }
 
 .coluncentral {
@@ -62,26 +84,41 @@ input {
     background-color: rgb(60, 116, 230);
     padding: 30px;
     color: white;
-    border-radius: 30px;
+    border-radius: 20px;
     margin-bottom: 35px;
+    
 }
 
 .cuadrado1 {
     background-color: rgb(255, 255, 255);
     padding: 30px;
+    width: 850px;
+    height: 400px;
 }
+
+.cuadrado {
+    margin: 50px 0px;
+    border: 1px solid black;
+    width: 135px;
+    height: 135px;
+}
+
 .cuadrado2 {
     background-color: rgb(255, 255, 255);
-    padding: 30px;
+    padding: 25px;
+}
+
+#fecha {
+    margin-top: 60px;
 }
 #matriculate {
     font-style: italic;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #enlaceFP {
     color: rgb(8, 107, 206);
-    
+
 }
 
 .realizado {
@@ -93,5 +130,51 @@ input {
 }
 
 .parrafo2 {
-    padding: 30px;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.titulo-lista {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.listaordenada {
+    margin-left: 20px;
+    margin-top: 0;
+}
+.listaordenada li {
+    margin-bottom: 6px;
+}
+.colundch {
+    display: flex;
+    flex-flow: column;
+    flex-basis: 10%;
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.enlacesdch {
+    color: rgb(110, 62, 155);
+}
+
+.webinteres{
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(238, 238, 238);
+    align-items: center;  
+}
+.listadrc {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
 }
