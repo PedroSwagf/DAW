@@ -88,33 +88,56 @@ h1 {
     }
 }
 
+@media (max-width: 960px) {
+    .encabezado {
+        margin: 10px;
+        width: auto; 
+        flex-wrap: wrap; 
+    }
+
+    
+    .menu {
+        width: 100%; 
+        margin-top: 20px;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: space-around; 
+        padding: 0;
+    }
+
+    #logo {
+        width: 300px; 
+        height: auto;
+    }
+}
+
+
 @media (max-width: 600px) {
-   
     .encabezado {
         flex-direction: column;
-        height: auto; 
         align-items: center;
-        gap: 20px;
         padding: 10px;
     }
 
     .logo {
         flex-direction: column;
         gap: 10px;
-    }
-
-   
-    ul {
-        flex-flow: column nowrap; 
-        padding: 0;
-        gap: 15px;
-        width: 100%; 
         text-align: center;
     }
 
-    a {
-        display: block;
+
+    ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .hiperenlace {
+        display: block; 
         padding: 10px;
         width: 100%;
+        text-align: center;
     }
 }
