@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores identificadores</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding: 15px;
+        }
+        #cabecera {
+            background-color: #cccccc;
+            border: 1px solid #6dc189;
+            margin-bottom: 15px;
+        }
+
+        .textonegrita {
+            font-weight: bold;
+        }
+        .textorojo {
+            color: red;
+        }
+
+        .textocursiva {
+            font-style: italic;
+        }
+        .textojustificado{
+            text-align: justify;
+        }
+        .textogrande {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        #contenido{
+            background-color: #95eef8;
+            gap: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 15px;
+            border: 1px solid #6dc189;
+        }
+
+        .columna1 {
+            background-color: #f8d595;
+            border: 1px solid #6dc189;
+            flex: 1;
+            padding: 15px;
+        }
+
+        .columna2 {
+            background-color: #f8d595;
+            border: 1px solid #6dc189;
+            flex: 3;
+            padding: 15px;
+        }
+        
+        p {
+            padding: 20px;
+        }
+
+        #piepagina{
+            background-color: #95fac6;
+        }
+
+        a {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="cabecera">
+            <h1>
+                Ejemplo de Dos Columnas
+            </h1>
+            <p>
+                esta es la cabecera del documento. Contiene el titulo principal
+                y una breve descripcion
+            </p>
+        </div>
+
+        <div id="contenido">
+            <div class="columna1">
+                <h2>
+                    Columna Izquierda
+                </h2>
+                <ul>
+                    <li class="textonegrita">Elemento 1 en negrita</li>
+                    <li class="textorojo">Elemento 2 en rojo</li>
+                    <li class="textonegrita textorojo">Elemento 3 en rojo y negrita</li>
+                </ul>
+            </div>
+            <div class="columna2">
+                <h2>
+                    Columna Derecha
+                </h2>
+                <p class="textocursiva">El Vacío Infinito: El espacio exterior no es un vacío absoluto, sino que contiene una baja densidad de partículas, principalmente gas hidrógeno y helio, así como radiación electromagnética y campos magnéticos. 🌌</p>
+                <p class="textojustificado">Las Galaxias Lejanas: Una galaxia es un conjunto de estrellas, nubes de gas, planetas, polvo cósmico, materia oscura y energía unidos gravitatoriamente en una estructura más o menos definida. 🪐</p>
+                <p class="textorojo">El Nacimiento de las Estrellas: Las estrellas nacen en las regiones más densas de las nubes moleculares, a menudo denominadas "guarderías estelares". Estas nubes están compuestas principalmente por hidrógeno. ⭐</p>
+                <p class="textogrande">Los Agujeros Negros: Un agujero negro es una región finita del espacio en cuyo interior existe una concentración de masa lo suficientemente elevada como para generar un campo gravitatorio tal que ninguna partícula material puede escapar de él. 🕳️</p>
+                <p class="textonegrita">La Exploración Espacial: Desde el lanzamiento del Sputnik 1 en 1957, la humanidad ha enviado sondas y naves para estudiar los planetas, lunas y asteroides de nuestro sistema solar, buscando respuestas sobre nuestro origen. 🚀</p>
+            </div>
+        </div>
+        <div id="piepagina">
+                <p>
+                    Aqui esta el pie de pagina 
+                    <a href="#cabecera">
+                        Ir a la cabecera
+                    </a>
+                </p>
+                
+        </div>
+    </div>   
+</body>
+</html>

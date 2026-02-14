@@ -1,0 +1,28 @@
+@page {
+    size: A5 landscape;
+    margin: 10mm;
+}
+
+
+h1:first-of-type {
+    break-after: page;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    word-spacing: 2px;
+}
+
+ol {
+    line-height: 2;
+    list-style-type: upper-roman;
+}

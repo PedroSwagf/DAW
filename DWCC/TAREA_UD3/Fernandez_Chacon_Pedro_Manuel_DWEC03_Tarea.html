@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAREA DWEC03</title>
+</head>
+<body>
+    <h1>Tarea DWEC03</h1>
+    <hr>
+
+    <script>
+        // Función para abrir una nueva ventana y escribir en ella
+        function abrirVentana() {
+            const nuevaVentana = window.open('', '', 'width=800,height=600,scrollbars=no,resizable=no');
+
+            if (nuevaVentana) {
+                nuevaVentana.document.write('<h3>Ejemplo de Ventana Nueva</h3>');
+                nuevaVentana.document.write(`URL Completa: ${window.location.href}<br>`);
+                nuevaVentana.document.write(`Protocolo Utilizado: ${window.location.protocol}<br>`);
+                nuevaVentana.document.write(`Nombre en código del navegador: ${navigator.appCodeName}<br>`);
+
+                // Detección de disponibilidad de Java
+                const javaDisponible = navigator.javaEnabled();
+                if (javaDisponible) {
+                    nuevaVentana.document.write('Java SI disponible en esta ventana.<br>');
+                } else {
+                    nuevaVentana.document.write('Java NO disponible en esta ventana.<br>');
+                }
+
+                // Añadir iframe a la ventana nueva en esta caso del instituto de rodeira.
+                document.write('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.724422773365!2d-8.77102391539889!3d42.263057221621935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2f610d37f0d035%3A0x9650f43ab55b90a4!2sIES%20de%20Rodeira!5e0!3m2!1ses!2ses!4v1730836660717!5m2!1ses!2ses" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>');
+            }
+        }
+
+        // Llamar a la función para abrir la ventana
+        abrirVentana();
+
+        // Solicitar datos al usuario
+        const nombreCompleto = prompt('Introduce tu nombre y apellidos');
+        const diaNacimiento = prompt('Introduce tu día de nacimiento');
+        const mesNacimiento = prompt('Introduce tu mes de nacimiento');
+        const anioNacimiento = prompt('Introduce tu año de nacimiento');
+
+        // Procesar la información
+        const nombreLength = nombreCompleto.length;
+        const primeraA = nombreCompleto.toLowerCase().indexOf('a') + 1; // +1 para posición humana
+        const ultimaA = nombreCompleto.toLowerCase().lastIndexOf('a') + 1;
+        const nombreSin3Primeras = nombreCompleto.substring(3);
+        const nombreMayus = nombreCompleto.toUpperCase();
+        const edad = new Date().getFullYear() - parseInt(anioNacimiento);
+        const fechaNacimientoTexto = new Date(anioNacimiento, mesNacimiento - 1, diaNacimiento).toLocaleDateString('es-ES', { day: 'numeric', month: 'long' });
+        const coseno180 = Math.cos(180 * Math.PI / 180);
+        const numeroMayor = Math.max(34, 67, 23, 75, 35, 19);
+        const numeroAzar = Math.random();
+
+        // Mostrar resultados en la ventana principal
+        document.write(`<h2>Buenos días ${nombreCompleto}</h2>`);
+        document.write(`Tu nombre tiene ${nombreLength} caracteres, incluidos espacios.<br>`);
+        document.write(`La primera letra A de tu nombre está en la posición: ${primeraA}<br>`);
+        document.write(`La última letra A de tu nombre está en la posición: ${ultimaA}<br>`);
+        document.write(`Tu nombre menos las 3 primeras letras es: ${nombreSin3Primeras}<br>`);
+        document.write(`Tu nombre todo en mayúsculas es: ${nombreMayus}<br>`);
+        document.write(`Tu edad es: ${edad} años.<br>`);
+        document.write(`Naciste un feliz ${fechaNacimientoTexto} del año ${anioNacimiento}.<br>`);
+        document.write(`El coseno de 180 es: ${coseno180}<br>`);
+        document.write(`El número mayor de (34,67,23,75,35,19) es: ${numeroMayor}<br>`);
+        document.write(`Ejemplo de número al azar: ${numeroAzar}<br>`);
+    </script>
+</body>
+</html>

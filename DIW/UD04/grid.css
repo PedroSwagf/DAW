@@ -1,0 +1,43 @@
+.grid-container {
+    text-align: center;
+    display: grid;
+    width: 600px;
+    grid-template-columns: 200px auto auto 150px;
+    grid-template-rows: 100px auto auto 50px;
+    gap: 10px;
+    border: 2px solid black;
+    grid-template-areas: 
+    "head head . ."
+    "sidebarizq main main ."
+    ". main main sidebardch"
+    ". . footer footer"
+    ;
+}
+.header {
+    grid-area: head;
+    background-color: #add8e6 ;
+    border: 1px solid black;
+}
+
+.sidebarizq {
+    grid-area: sidebarizq;
+    background-color: #f08080;
+    border: 1px solid black;
+}
+
+.maincontent {
+    grid-area: main;
+    background-color: #90ee90;
+    border: 1px solid black;
+}
+.sidebardch {
+    grid-area: sidebardch;
+    background-color: #f08080;
+    border: 1px solid black;
+}
+.footer {
+    grid-area: footer;
+    background-color: #d3d3d3;
+    border: 1px solid black;
+}
+

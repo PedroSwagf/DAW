@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(211, 211, 211);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedorPrincipal {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.encabezado {
+    background-color: rgb(133, 132, 132);
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    flex-basis: 100%;
+    margin: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#logo{
+    width: 478px;
+    height: 108px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    display: flex;
+    flex-flow: row;
+    gap: 30px;
+    list-style-type: none;
+    padding-right: 25px;
+    
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.hiperenlace {
+    color: #ffffff;
+    flex-direction: row;
+    font-size: 30px;
+}
+
+.hiperenlace:hover{
+    text-decoration: none;
+    background-color: rgb(138, 94, 17);
+}
+
+@media (max-width: 960px) {
+    .encabezado{
+        box-sizing: border-box;
+        margin: 10px;
+        width: auto;
+    }
+    img {
+        object-fit: contain;
+        object-position:center center;
+        border-radius: 50px;
+    }
+
+    #logo{
+        width: 200px;
+        height: auto;
+    }
+
+    .menu {
+        flex-grow: 1;
+    }
+    ul {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0;
+    }
+}
+
+@media (max-width: 960px) {
+    .encabezado {
+        margin: 10px;
+        width: auto; 
+        flex-wrap: wrap; 
+    }
+
+    
+    .menu {
+        width: 100%; 
+        margin-top: 20px;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: space-around; 
+        padding: 0;
+    }
+
+    #logo {
+        width: 300px; 
+        height: auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .encabezado {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+
+    ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .hiperenlace {
+        display: block; 
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
