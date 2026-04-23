@@ -1,9 +1,51 @@
-.container{}
+body {
+    background-color: #896b49;
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+}
 
-.instrument{}
+header {
+    background-color: #8b4513;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+}
 
-.titulo{}
+.catalogo {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
 
-.imagen{}
+.instrument {
+    background-color: #fff8ee;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 250px;
+    height: auto;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+}
 
-.audio{}
+.titulo {
+    color: #5a2d0c;
+    margin-bottom: 10px;
+}
+
+.audio {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
