@@ -1,0 +1,28 @@
+@font-face {
+    font-family: Satisfy;
+    src: url('../fonts/Satisfy-Regular.ttf');
+}
+body {
+    font-family: Satisfy, cursive;
+    margin: 0;
+}
+
+.cabecera {
+    background-color: #30dfce;
+    padding: 20px;
+    text-align: center;
+}
+
+.cabecera p {
+    font-size: 24px;
+}
+
+.cabecera h1 {
+    font-size: 34px;
+}
+
+.contenedor {
+    display: flex;
+    padding: 20px;
+    background-image: url('../img/fondo.jpg');
+}

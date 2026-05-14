@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario de datos personales, bancarios y de intereses">
+  <title>Formulario de Registro</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <main class="contenedor">
+    <header class="form-header">
+      <h1>Formulario de Registro</h1>
+    </header>
+
+    <p class="nota-obligatorio">Los campos marcados con <span class="asterisco" aria-hidden="true">*</span> <span class="sr-only">asterisco</span> son <strong>obligatorios</strong>.</p>
+
+    <form method="POST" action="#" novalidate>
+
+      <!-- DATOS PERSONALES -->
+      <fieldset>
+        <legend>Datos Personales</legend>
+
+        <div class="form-grupo">
+          <label for="nombre"><span class="asterisco" aria-hidden="true">*</span> Nombre:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="NOMBRE"
+            maxlength="20"
+            required
+            accesskey="n"
+            autocomplete="given-name"
+            placeholder="Tu nombre"
+          >
+        </div>
+
+        <div class="form-grupo">
+          <label for="apellido1"><span class="asterisco" aria-hidden="true">*</span> Primer Apellido:</label>
+          <input
+            type="text"
+            id="apellido1"
+            name="APELLIDO1"
+            maxlength="20"
+            required
+            accesskey="p"
+            autocomplete="family-name"
+            placeholder="Primer apellido"
+          >
+        </div>
+
+        <div class="form-grupo">
+          <label for="apellido2"><span class="asterisco" aria-hidden="true">*</span> Segundo Apellido:</label>
+          <input
+            type="text"
+            id="apellido2"
+            name="APELLIDO2"
+            maxlength="20"
+            required
+            accesskey="s"
+            autocomplete="additional-name"
+            placeholder="Segundo apellido"
+          >
+        </div>
+
+        <!-- Sexo -->
+        <div class="form-grupo form-grupo--radio">
+          <span class="label-grupo"><span class="asterisco" aria-hidden="true">*</span> Sexo:</span>
+          <div class="radio-opciones" role="group" aria-labelledby="label-sexo">
+            <span id="label-sexo" class="sr-only">Seleccione su sexo (obligatorio)</span>
+            <label class="radio-label">
+              <input type="radio" name="SEXO" value="Hombre" required accesskey="h">
+              Hombre
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="SEXO" value="Mujer" accesskey="m">
+              Mujer
+            </label>
+          </div>
+        </div>
+
+        <!-- Grupo de edad -->
+        <div class="form-grupo form-grupo--radio">
+          <span class="label-grupo"><span class="asterisco" aria-hidden="true">*</span> Grupo de edad:</span>
+          <div class="radio-opciones" role="group" aria-labelledby="label-edad">
+            <span id="label-edad" class="sr-only">Seleccione su grupo de edad (obligatorio)</span>
+            <label class="radio-label">
+              <input type="radio" name="EDAD" value="Menor de 20" required accesskey="1">
+              Menor de 20
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="EDAD" value="De 20 a 35" accesskey="2">
+              20–35
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="EDAD" value="De 36 a 50" accesskey="3">
+              36–50
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="EDAD" value="Mayor de 50" accesskey="4">
+              Mayor de 50
+            </label>
+          </div>
+        </div>
+
+        <!-- País de nacimiento -->
+        <div class="form-grupo">
+          <label for="pais"><span class="asterisco" aria-hidden="true">*</span> País de nacimiento:</label>
+          <select id="pais" name="PAIS" accesskey="o" autocomplete="country">
+            <option value="">-- Seleccione un país --</option>
+            <option value="Alemania">Alemania</option>
+            <option value="Bolivia">Bolivia</option>
+            <option value="Canada">Canadá</option>
+            <option value="Dinamarca">Dinamarca</option>
+            <option value="España">España</option>
+            <option value="Finlandia">Finlandia</option>
+            <option value="Grecia">Grecia</option>
+            <option value="Holanda">Holanda</option>
+            <option value="Italia">Italia</option>
+            <option value="Luxemburgo">Luxemburgo</option>
+          </select>
+        </div>
+
+      </fieldset>
+
+      <!-- DATOS BANCARIOS -->
+      <fieldset>
+        <legend>Datos Bancarios</legend>
+
+        <div class="form-grupo">
+          <label for="ccc">C.C.C. (Código Cuenta Cliente):</label>
+          <input
+            type="text"
+            id="ccc"
+            name="CCC"
+            maxlength="20"
+            autocomplete="off"
+            placeholder="Ej: 1234-5678-90-1234567890"
+            title="Código Cuenta Cliente: 20 dígitos"
+          >
+        </div>
+
+        <!-- Tipo de cuenta -->
+        <div class="form-grupo form-grupo--radio">
+          <span class="label-grupo">Tipo de cuenta:</span>
+          <div class="radio-opciones" role="group" aria-label="Tipo de cuenta bancaria">
+            <label class="radio-label">
+              <input type="radio" name="TIPOCUENTA" value="Ahorro">
+              De ahorro
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="TIPOCUENTA" value="Corriente">
+              Corriente
+            </label>
+          </div>
+        </div>
+
+        <!-- Tipo de sucursal -->
+        <div class="form-grupo form-grupo--radio">
+          <span class="label-grupo">Tipo de sucursal:</span>
+          <div class="radio-opciones" role="group" aria-label="Tipo de sucursal bancaria">
+            <label class="radio-label">
+              <input type="radio" name="TIPOSUCURSAL" value="Banco">
+              Banco
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="TIPOSUCURSAL" value="Caja">
+              Caja
+            </label>
+          </div>
+        </div>
+
+        <!-- Servicios contratados -->
+        <div class="form-grupo form-grupo--check">
+          <span class="label-grupo">Servicios contratados:</span>
+          <div class="check-opciones" role="group" aria-label="Servicios bancarios contratados">
+            <label class="check-label">
+              <input type="checkbox" name="Nomina">
+              Nómina domiciliada
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="Hipoteca">
+              Préstamo hipotecario
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="Personal">
+              Préstamo personal
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="Seguridad">
+              Caja de seguridad
+            </label>
+          </div>
+        </div>
+
+      </fieldset>
+
+      <!-- OTROS DATOS DE INTERÉS -->
+      <fieldset>
+        <legend>Otros Datos de Interés</legend>
+
+        <div class="form-grupo form-grupo--check">
+          <span class="label-grupo">¿Le interesan estos temas?</span>
+          <div class="check-opciones" role="group" aria-label="Temas de interés">
+            <label class="check-label">
+              <input type="checkbox" name="Libros">
+              Libros
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="Viajes">
+              Viajes
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="Informatica">
+              Informática
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="Cursos">
+              Cursos
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="Seguros">
+              Seguros
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="Musica">
+              Música
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="Apuestas">
+              Apuestas
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="Idiomas">
+              Idiomas
+            </label>
+            <label class="check-label">
+              <input type="checkbox" name="Empleo">
+              Empleo
+            </label>
+          </div>
+        </div>
+
+        <div class="form-grupo">
+          <label for="otros-temas">Otros temas de interés:</label>
+          <textarea
+            id="otros-temas"
+            name="OtrosTemas"
+            rows="4"
+            cols="40"
+            placeholder="Escriba aquí sus temas de interés"
+            aria-describedby="otros-temas-ayuda"
+          ></textarea>
+          <span id="otros-temas-ayuda" class="ayuda-campo">Indique cualquier otro tema que sea de su interés.</span>
+        </div>
+
+      </fieldset>
+
+      <!-- BOTONES -->
+      <div class="form-acciones">
+        <button type="submit">Enviar datos</button>
+        <button type="reset">Limpiar formulario</button>
+      </div>
+
+    </form>
+
+    <p class="nota-obligatorio">Los campos marcados con <span class="asterisco" aria-hidden="true">*</span> son <strong>obligatorios</strong>.</p>
+
+  </main>
+
+</body>
+</html>
