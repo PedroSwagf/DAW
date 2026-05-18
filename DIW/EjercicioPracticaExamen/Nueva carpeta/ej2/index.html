@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej2</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="cabecera">
+        <h1>Actuaciones Destacadas en Eurovision</h1>
+        <p>Descubre algunas de las actuaciones mas destacas 💖 de Eurovision con subtitulos en español e ingles</p>
+    </header>
+    <div class="contenedor">
+        <figure class="video">
+            <video controls poster="img/poster1.jpg">
+                <source src="assets/videos/video1.mp4" type="video/mp4">
+                <track src="assets/videos/video1_es.vtt" label="Español" default srclang="es" kind="subtitles">
+            </video>
+            <figcaption>Melody - "Esa diva" - España (Puesto24)</figcaption>
+        </figure>
+        <figure class="video">
+            <video controls poster="img/poster2.jpg">
+                <source src="assets/videos/video2.mp4" type="video/mp4"> 
+                <track src="assets/videos/video2_es.vtt" label="Español" kind="subtitles" srclang="es" default>
+                <track src="assets/videos/video2_en.vtt" label="English" kind="subtitles" srclang="english">
+            </video>
+            <figcaption> Pararta patatera</figcaption>
+        </figure>
+        <figure class="video">
+            <video controls poster="img/poster3.jpg">
+                <source src="assets/videos/video3.mp4" type="video/mp4"> 
+                <track src="assets/videos/video3_es.vtt" label="Español" kind="subtitles" srclang="es" default>
+                <track src="assets/videos/video3_en.vtt" label="English" kind="subtitles" srclang="english">
+            </video>
+            <figcaption> Pararta patatera</figcaption>
+        </figure>
+    </div>
+    <footer class="pie">
+        <p>2025 Eurovision - Actuaciones destacadas</p>
+    </footer>
+</body>
+</html>
